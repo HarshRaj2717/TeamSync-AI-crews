@@ -1,0 +1,9 @@
+[submodule "InstagramCrew"]
+	path = InstagramCrew
+	url = https://github.com/PraNavKumAr01/InstagramCrew.git
+[submodule "Job_posting_crew"]
+	path = Job_posting_crew
+	url = https://github.com/PraNavKumAr01/Job_posting_crew.git
+[submodule "MeetingPlannerCrew"]
+	path = MeetingPlannerCrew
+	url = https://github.com/PraNavKumAr01/MeetingPlannerCrew.git

@@ -18,6 +18,38 @@ async def get_emails():
 
 
 # Meeting Planner Agent
+@app.get("/meeting_summary")
+async def get_meeting_summary():
+    try:
+        # Read the contents of output.txt
+        with open("MeetingPlannerCrew/meeting_brief.txt", 'r') as file:
+            output_text = file.read()
+
+        return {"message": output_text}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
+
+# @app.get("/meeting_strategy")
+# async def get_meeting_strategy():
+#     try:
+#         # Read the contents of output.txt
+#         with open("MeetingPlannerCrew/meeting_strategy.txt", 'r') as file:
+#             output_text = file.read()
+
+#         return {"message": output_text}
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
+
+# @app.get("/industry_analysis")
+# async def get_industry_analysis():
+#     try:
+#         # Read the contents of output.txt
+#         with open("MeetingPlannerCrew/industry_analysis.txt", 'r') as file:
+#             output_text = file.read()
+
+#         return {"message": output_text}
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
 
 
 # Instagram Crew
@@ -75,6 +107,7 @@ async def get_photo_review():
         return {"message": output_text}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
+
 
 # Job Posting Crew
 
