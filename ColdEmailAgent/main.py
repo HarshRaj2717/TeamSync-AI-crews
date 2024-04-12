@@ -77,6 +77,7 @@ crew = Crew(
     agents=[email_personalizer, ghostwriter],
     tasks=[*personalize_email_tasks, *ghostwrite_email_tasks],
     max_rpm=29,
+    output_log_file=True,
 )
 
 # Kick off the crew

@@ -1,0 +1,60 @@
+agent=Email Personalizer2024-04-12 14:05:59: task=
+                Personalize the template email for recipient using their information.
+
+                - Name: Claire Thompson
+                - Email: john.smith@example.com
+                - Bio: Claire Thompson is the co-founder and CEO of SaaSOptics, a rapidly growing provider of subscription management and billing automation software for SaaS companies. A veteran entrepreneur, Claire has over 15 years of experience in the cloud computing space. Prior to founding SaaSOptics in 2018, she was the VP of Marketing at SaaSMetrics, where she helped drive adoption of their usage analytics platform. Claire's strategic vision and product leadership have been key factors in SaaSOptics' success, allowing the company to triple its customer base and headcount in just three years. She holds an MBA from Harvard Business School.
+
+                Important Info to consider:
+                - When personalizing the email, only use one sentence from the bio. 
+                    And make sure to incorporate it naturally into the email. Without going too much in to detail.
+                - Make sure to keep the updated email roughly the same same length as the template email.
+                
+                The template email is as follows:
+
+                ```
+                
+Dear [Name],
+
+Allow me to introduce InnoVest - a game-changing platform designed to revolutionize the startup ecosystem. Our comprehensive solution offers:
+
+A Startup Marketplace to buy/sell startups or equity; Shark Tank competitions for live investor pitching; AI Idea Evaluation to refine pitches and value ideas; Business Knowledge chatbot for entrepreneurial guidance; and an Idea Showcase to connect with investors/collaborators.
+
+InnoVest empowers entrepreneurs at every stage - from ideation to funding to business growth. Our suite of tools addresses key challenges faced by startups. I'd be delighted to discuss how we can support your entrepreneurial journey and provide a personalized demo.
+
+Please let me know if you'd like to explore partnering with InnoVest. I look forward to the opportunity.
+
+Best regards,
+HR Manager
+InnoVest
+
+                ```
+            2024-04-12 14:05:59: status=started
+agent=Email Personalizer2024-04-12 14:05:59: task=2024-04-12 14:05:59: status=completed
+agent=Ghostwriter2024-04-12 14:05:59: task=
+                Revise the draft email to adopt the following writing style.
+
+                Writing Style:
+                - Use a slightly informal, engaging, and slightly sales-oriented tone, mirroring ghost writer's final email communication style. 
+                - This approach prioritizes clear, direct communication while maintaining a friendly and approachable tone. 
+                - Use straightforward language, including phrases like "Hey [Name]!" to start emails or messages. 
+                - The tone will be optimistic and encouraging, aiming to build rapport and motivate action, while staying grounded in practical advice.
+
+                Important Notes:
+                - Do not use emojis.
+                - Do not use slurs.
+                - The mail will be sent to business leads, so keep the tone professional yet engaging.
+            2024-04-12 14:05:59: status=started
+agent=Ghostwriter2024-04-12 14:06:09: task=Hey Claire Thompson!
+
+I hope you're doing well! I'm thrilled to introduce you to InnoVest, a groundbreaking platform tailored to transform the startup landscape. I truly believe it can make a significant impact on your entrepreneurial journey as the co-founder and CEO of SaaSOptics.
+
+InnoVest features a Startup Marketplace for buying/selling startups or equity, Shark Tank-style competitions for live investor pitching, AI Idea Evaluation to enhance pitch quality and value ideas, a Business Knowledge chatbot for entrepreneurial guidance, and an Idea Showcase for connecting with investors and collaborators. Our comprehensive toolkit addresses crucial challenges startups face at every stage, from ideation to funding to business growth.
+
+Given your impressive background in the cloud computing sector and a successful track record in SaaS companies, I'm confident that InnoVest's offerings will bring immense value to you. I'd love to chat about how we can support your entrepreneurial ventures and provide a personalized demo.
+
+Should you be interested in partnering with InnoVest, please drop me a line. I eagerly await the opportunity!
+
+Warm Regards,
+HR Manager
+InnoVest2024-04-12 14:06:09: status=completed
