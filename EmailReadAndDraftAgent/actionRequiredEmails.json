@@ -1,0 +1,54 @@
+[
+{
+"thread_id": "18ed1ed4c16481cf",
+"summary": "TLDR Newsletter update on AI, quantum computing, and tech trends.",
+"main_points": [
+"Article: The impact of AI on the job market",
+"Article: Quantum computing for beginners",
+"Trend: Virtual reality in education"
+],
+"user": "You",
+"answering_to": "TLDR Newsletter",
+"communication_style": "Informative, friendly",
+"sender_email_address": "dan@tldrnewsletter.com"
+},
+{
+"thread_id": "18ecfe3ee0db4287",
+"summary": "IEEE eNotice about upcoming events and webinars.",
+"main_points": [
+"Webinar: AI in healthcare",
+"Conference: Women in engineering",
+"Networking event: IEEE Day 2022"
+],
+"user": "You",
+"answering_to": "IEEE eNotice",
+"communication_style": "Professional, direct",
+"sender_email_address": "enotice@enotice.ieee.org"
+},
+{
+"thread_id": "18ecf7066414772a",
+"summary": "AWS announcement on new services and updates.",
+"main_points": [
+"New service: Amazon EC2 Instance types",
+"Update: AWS Systems Manager",
+"New feature: AWS App Runner"
+],
+"user": "You",
+"answering_to": "AWS",
+"communication_style": "Technical, concise",
+"sender_email_address": "no-reply-aws@amazon.com"
+},
+{
+"thread_id": "18eceaaafdb78834",
+"summary": "Manchester United announcement on new merchandise and promotions.",
+"main_points": [
+"New merchandise: 2022-2023 season kits",
+"Discount: 20% off for members",
+"Promotion: Exclusive signed memorabilia"
+],
+"user": "You",
+"answering_to": "Manchester United",
+"communication_style": "Promotional, engaging",
+"sender_email_address": "manutd@emails.manutd.com"
+}
+]

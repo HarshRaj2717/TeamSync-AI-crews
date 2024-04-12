@@ -2,6 +2,9 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from src.graph import WorkFlow
 
+from typing import List
+import json
+
 app = FastAPI()
 
 class EmailInput(BaseModel):
@@ -18,6 +21,22 @@ def invoke_workflow(email_input: EmailInput):
         with open('output.txt', 'r') as file:
             output_text = file.read()
 
-        return {"message": "Workflow invoked successfully!", "output_text": output_text}
+        with open('crew.log', 'w') as file:
+            logged_data = output_buffer.getvalue()
+            file.write(logged_data)
+
+        return {"message": "Workflow invoked successfully!",
+                "output_text": output_text}
+    except Exception as e:
+        raise HTTPException(status_code=500,
+                            detail=f"Failed to invoke workflow: {str(e)}")
+
+@app.get("/responses", response_model=List[List[dict]])
+async def get_emails():
+    try:
+        with open("draftResponses.json", "r") as file:
+            data = json.load(file)
+            return data
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")

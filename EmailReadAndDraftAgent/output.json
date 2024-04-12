@@ -1,0 +1,49 @@
+[
+[
+{"type": "Draft1",
+"to": "newsletters-noreply@linkedin.com",
+"from": "Ritesh Kanjee",
+"message": "Hi Ritesh,\n\nI really appreciate the article you shared on LinkedIn about the importance of mentoring in the workplace. Your emphasis on the value of mentoring for both personal and professional growth is spot on. I also appreciate your role in fostering a supportive work environment. Thanks for sharing!\n\nBest,\nRitesh"},
+},
+{"type": "Draft2",
+"to": "enotice@enotice.ieee.org",
+"from": "IEEE eNotice",
+"message": "Hi IEEE eNotice,\n\nThank you for the email about the upcoming IEEE Virtual Event Series on Power & Energy. I'm looking forward to attending the virtual events and learning from the experts in the field. I'll be sure to register using the link provided.\n\nBest,\nIEEE eNotice"},
+},
+{"type": "Draft3",
+"to": "no-reply-aws@amazon.com",
+"from": "Amazon Web Services, Inc.",
+"message": "Hi AWS,\n\nThank you for the notification about the retirement of the Amazon RDS DB Instance. I appreciate the timeline provided and the instructions on how to migrate data. I'll be sure to follow the instructions and complete the migration before the retirement date.\n\nBest,\nAmazon Web Services, Inc."
+},
+},
+{"type": "Draft4",
+"to": "manutd@emails.manutd.com",
+"from": "Manchester United",
+"message": "Hi Manchester United,\n\nThank you for the email with the latest club news and match updates. I'm looking forward to the upcoming matches and appreciate the player news. I'll be sure to check out the exclusive merchandise offers as well.\n\nBest,\nManchester United"
+},
+},
+{"type": "Final1",
+"to": "newsletters-noreply@linkedin.com",
+"from": "Ritesh Kanjee",
+"message": "Hi Ritesh,\n\nThank you for sharing the article on LinkedIn about the importance of mentoring in the workplace. I really appreciate your emphasis on the value of mentoring for both personal and professional growth. I also appreciate your role in fostering a supportive work environment. Thanks for sharing!\n\nBest,\nRitesh"
+},
+},
+{"type": "Final2",
+"to": "enotice@enotice.ieee.org",
+"from": "IEEE eNotice",
+"message": "Hi IEEE eNotice,\n\nThank you for the email about the upcoming IEEE Virtual Event Series on Power & Energy. I'm looking forward to attending the virtual events and learning from the experts in the field. I'll be sure to register using the link provided.\n\nBest,\nIEEE eNotice"
+},
+},
+{"type": "Final3",
+"to": "no-reply-aws@amazon.com",
+"from": "Amazon Web Services, Inc.",
+"message": "Hi AWS,\n\nThank you for the notification about the retirement of the Amazon RDS DB Instance. I appreciate the timeline provided and the instructions on how to migrate data. I'll be sure to follow the instructions and complete the migration before the retirement date.\n\nBest,\nAmazon Web Services, Inc."
+},
+},
+{"type": "Final4",
+"to": "manutd@emails.manutd.com",
+"from": "Manchester United",
+"message": "Hi Manchester United,\n\nThank you for the email with the latest club news and match updates. I'm looking forward to the upcoming matches and appreciate the player news. I'll be sure to check out the exclusive merchandise offers as well.\n\nBest,\nManchester United"
+},
+}
+]
