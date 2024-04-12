@@ -15,7 +15,8 @@ class MeetingPreparationTasks():
 				An insightful analysis that identifies major trends, potential
 				challenges, and strategic opportunities."""),
 			async_execution=True,
-			agent=agent
+			agent=agent,
+			output_file = "industry_analysis.txt"
 		)
 
 	def meeting_strategy_task(self, agent, context, objective):
@@ -29,7 +30,8 @@ class MeetingPreparationTasks():
 			expected_output=dedent("""\
 				Complete report with a list of key talking points, strategic questions
 				to ask to help achieve the meetings objective during the meeting."""),
-			agent=agent
+			agent=agent,
+			output_file = "meeting_strategy.txt"
 		)
 
 	def summary_and_briefing_task(self, agent, context, objective):

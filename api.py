@@ -29,27 +29,27 @@ async def get_meeting_summary():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
 
-# @app.get("/meeting_strategy")
-# async def get_meeting_strategy():
-#     try:
-#         # Read the contents of output.txt
-#         with open("MeetingPlannerCrew/meeting_strategy.txt", 'r') as file:
-#             output_text = file.read()
+@app.get("/meeting_strategy")
+async def get_meeting_strategy():
+    try:
+        # Read the contents of output.txt
+        with open("MeetingPlannerCrew/meeting_strategy.txt", 'r') as file:
+            output_text = file.read()
 
-#         return {"message": output_text}
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
+        return {"message": output_text}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
 
-# @app.get("/industry_analysis")
-# async def get_industry_analysis():
-#     try:
-#         # Read the contents of output.txt
-#         with open("MeetingPlannerCrew/industry_analysis.txt", 'r') as file:
-#             output_text = file.read()
+@app.get("/industry_analysis")
+async def get_industry_analysis():
+    try:
+        # Read the contents of output.txt
+        with open("MeetingPlannerCrew/industry_analysis.txt", 'r') as file:
+            output_text = file.read()
 
-#         return {"message": output_text}
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
+        return {"message": output_text}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
 
 
 # Instagram Crew
