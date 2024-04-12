@@ -110,6 +110,16 @@ async def get_photo_review():
 
 
 # Job Posting Crew
+@app.get("/job_review")
+async def get_job_review():
+    try:
+        # Read the contents of output.txt
+        with open("Job_posting_crew/job_posting.md", 'r') as file:
+            output_text = file.read()
+
+        return {"message": output_text}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")    
 
 
 # Cold Email Agent
