@@ -89,4 +89,4 @@ end_time = time.time()
 elapsed_time = end_time - start_time
 
 print(f"Crew kickoff took {elapsed_time} seconds.")
-print("Crew usage", crew.usage_metrics)
+# print("Crew usage", crew.usage_metrics)
