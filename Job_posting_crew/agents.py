@@ -1,10 +1,10 @@
 import os
 
 from crewai import Agent
-from crewai_tools.tools import SerperDevTool, FileReadTool
+from crewai_tools.tools import SeperDevTool, FileReadTool
 from langchain_groq import ChatGroq
 
-seper_dev_tool = SerperDevTool()
+seper_dev_tool = SeperDevTool()
 file_read_tool = FileReadTool(
 	file_path='job_description_example.md',
 	description='A tool to read the job description example file.'
