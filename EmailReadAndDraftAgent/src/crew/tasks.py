@@ -65,16 +65,16 @@ class EmailFilterTasks:
 				- IF a research is necessary do it BEFORE drafting the response.
 				- If you need to pull the thread again do it using only the actual Thread ID.
 
-				Use the tool provided to draft each of the responses.
+				Use the tool provided to draft each of the responses in JSON with all relevant fields (sender, to, subject, message).
 				When using the tool pass the following input:
 				- to (sender to be responded)
 				- subject
 				- message
 
-				You MUST create all drafts before sending your final answer.
-				Your final answer MUST be a confirmation that all responses have been drafted.
+				You MUST create draft response with relevant fields in JSON then final response with same fields in JSON.
+				Your final answer MUST be a confirmation that all responses have been drafted and return the output JSON containing the above created draft and final created JSON.
 				"""),
 			agent=agent,
-			expected_output = "MUST be a confirmation that all responses have been drafted",
+			expected_output = "for each mail input, there MUST be a JSON containing 2 draft JSON and 1 final JSON response in a single list from the given information. For eg: Total Mails are 2, then for all the mails, 2 draft response JSON and 1 final response JSON in a single list",
 			output_file = "output.txt"
 		)
