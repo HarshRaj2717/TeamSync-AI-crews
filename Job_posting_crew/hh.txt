@@ -1,0 +1,8 @@
+What is the company description?
+We at amply digitize company on paper sop, provide a platofmr for them to create and complete sop tasks
+What is the company domain?
+www.getamply.co
+What are the hiring needs?
+We are looking for a full stack developer with good experiance in django and backend
+What are specific_benefits you offer?
+Stipend of 10 thousand rupees
