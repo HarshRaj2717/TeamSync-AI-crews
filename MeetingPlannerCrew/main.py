@@ -14,8 +14,9 @@ async def run():
 
 	print("## Welcome to the Meeting Prep Crew")
 	print('-------------------------------')
-	context = input("What is the context of the meeting?\n")
-	objective = input("What is your objective for this meeting?\n")
+	# TODO hardcoded values
+	context = "We are preparing for a meeting with a potential client in the tech industry. We are looking to understand the industry trends and the client's needs to prepare for the meeting."
+	objective = "Understand the industry trends and the client's needs to prepare for the meeting."
 
 	# Create Agents
 	industry_analyst_agent = agents.industry_analysis_agent()

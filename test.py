@@ -49,6 +49,7 @@ def generate_code_output(prompt):
     result = llm.invoke(prompt)
     return extract_code(result.content)
 
+# TODO hardcoded
 userPrompt = input("Enter your prompt : ")
 
 prompt = """
