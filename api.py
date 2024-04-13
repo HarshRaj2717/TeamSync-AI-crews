@@ -97,13 +97,13 @@ async def generate_text(data: InputData):
     init_chain = LLMChain(llm = llm, prompt = init_template, verbose = True, output_key = 'init_output', memory = memory)
     logs_chain = LLMChain(llm = llm, prompt = logs_template, verbose = True, output_key = 'logs_output', memory = memory)
 
+    crew = ["ColdEmailAgent",
+        "EmailReadAndDraftAgent",
+        "InstagramCrew",
+        "Job_posting_crew",
+        "MeetingPlannerCrew"
+        ]
     if data.crew_information:
-        crew = ["ColdEmailAgent",
-                "EmailReadAndDraftAgent",
-                "InstagramCrew",
-                "Job_posting_crew",
-                "MeetingPlannerCrew"
-                ]
         for agent in crew:
             try:
                 # Import the module dynamically
@@ -116,8 +116,11 @@ async def generate_text(data: InputData):
 
         response = init_chain({'crew_information' : data.crew_information})
     elif data.crew_logs:
-        response = logs_chain({'crew_logs' : data.crew_logs})
-    
+        for agent in crew:
+            log_path = agent + "/logs.txt"
+            with open(log_path, "r") as file:
+                data.crew_logs = file.read()
+                response = logs_chain({'crew_logs' : data.crew_logs})
     return response
 
 
