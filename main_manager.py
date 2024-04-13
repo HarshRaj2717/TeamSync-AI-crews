@@ -29,7 +29,7 @@ async def generate_text(data: InputData):
 
             As the main manager, you will interact with users who want to automate specific crews within their operations. Users will provide you with the names of the crews they wish to automate. Your task is to gather information about the selected crews and manage them effectively.
 
-            Step 1: Crew informatino
+            Step 1: Crew information
             You will be provided with the crews selected by the user that will be under your management
             Here is the crew's information : 
             {crew_information}

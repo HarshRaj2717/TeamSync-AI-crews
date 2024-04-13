@@ -13,6 +13,9 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain, ConversationChain
 from langchain.memory import ConversationBufferMemory
 
+import os
+
+
 # import ColdEmailAgent.main as ColdEmailAgent
 # import EmailReadAndDraftAgent.main as EmailReadAndDraftAgent
 # import InstagramCrew.main as InstagramCrew
@@ -133,16 +136,95 @@ async def process_input(user_input: UserInput):
     code = await grok.ask_grok(user_input)
     return {"message": code}
 
-# Email Read and Draft Agent
-@app.get("/email_draft_responses", response_model=List[List[dict]])
-async def get_emails():
-    try:
-        with open("EmailReadAndDraftAgent/draftResponses.json", "r") as file:
-            data = json.load(file)
-            return data
 
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")
+
+memory22 = ConversationBufferMemory(memory_key = 'chat_history22', return_messages = True)
+
+class InputData22(BaseModel):
+    prompt: str
+    logs: str
+
+@app.post("/talker")
+async def generate_text(data: InputData22):
+    logs22 = ""
+
+    try:
+        with open("MeetingPlannerCrew/meeting_brief.txt", 'r') as file:
+            logs22 += "MeetingPlannerCrew/meeting_brief.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("MeetingPlannerCrew/meeting_strategy.txt", 'r') as file:
+            logs22 += "MeetingPlannerCrew/meeting_strategy.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("MeetingPlannerCrew/industry_analysis.txt", 'r') as file:
+            logs22 += "MeetingPlannerCrew/industry_analysis.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("InstagramCrew/product_analysis.txt", 'r') as file:
+            logs22 += "InstagramCrew/product_analysis.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("InstagramCrew/campaign.txt", 'r') as file:
+            logs22 += "InstagramCrew/campaign.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("InstagramCrew/instagram_ad.txt", 'r') as file:
+            logs22 += "InstagramCrew/instagram_ad.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("InstagramCrew/photo_prompts.txt", 'r') as file:
+            logs22 += "InstagramCrew/photo_prompts.txt: " + "\n" + file.read()
+    except:
+        pass
+
+    try:
+        with open("Job_posting_crew/job_posting.md", 'r') as file:
+            logs22 += "Job_posting_crew/job_posting.md: " + "\n" + file.read()
+    except:
+        pass
+
+    init_template = PromptTemplate(
+        input_variables = ['chat_history22', 'logs', 'prompt'],
+        system_prompt = """
+            Welcome to TeamSync.AI, your automation partner! You are the main manager of our automation system. Your role is to oversee the selection and management of crews chosen for automation by our users.
+            You will also be provided the logs of all the previous tasks done by various agents, use these logs to answer the user prompts about how much work has been done or is being done:
+            {logs}
+            Summarize these logs and provide insights on what work is being done in the team.
+            Answer the following prompts as the manager:
+            {prompt}
+        """
+    )
+    init_chain = LLMChain(llm = llm, prompt = init_template, verbose = True, output_key = 'init_output', memory = memory22)
+
+    response = init_chain({'logs': logs22, 'prompt' : data.prompt})
+    
+    return response["output"]
+
+
+
+# Email Read and Draft Agent
+# @app.get("/email_draft_responses", response_model=List[List[dict]])
+# async def get_emails():
+#     try:
+#         with open("EmailReadAndDraftAgent/draftResponses.json", "r") as file:
+#             data = json.load(file)
+#             return data
+
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=f"Failed to invoke workflow: {str(e)}")
 
 
 # Meeting Planner Agent

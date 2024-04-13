@@ -1,0 +1,15 @@
+Based on the analysis conducted by the Lead Market Analyst, the top 3 competitors of Devfolio are Devpost, ChallengePost, and HackerEarth. Here is a detailed comparison between Devfolio and its top 3 competitors, highlighting their strategies, market positioning, and customer perception:
+
+- Devpost: Devpost is a leading platform that hosts hackathons and competitions for developers to showcase their skills and projects. It provides a wide range of tools for participants and organizers, including registration, project submission, judging, and prizes. Devpost's unique features include its focus on building a community around hackathons and connecting developers with job opportunities.
+
+  Devpost's strategy is to provide a one-stop solution for developers and organizations, offering a wide range of features for both parties. Its market positioning is that of a developer-friendly platform that caters to the needs of both developers and organizations looking to hire top talent. Customers perceive Devpost as a reliable and trustworthy platform that provides a seamless experience for all involved.
+
+- ChallengePost: ChallengePost is an innovation management platform that enables organizations to host hackathons and competitions for developers to build innovative solutions. Its unique features include its ability to create customized workflows and processes for events, and its focus on helping organizations source and evaluate innovative solutions from the developer community.
+
+  ChallengePost's strategy is to provide a platform that caters to the needs of organizations looking to tap into the developer community for innovation. Its market positioning is that of a platform that enables organizations to source and evaluate innovative solutions from the developer community. Customers perceive ChallengePost as a reliable and trustworthy platform that provides a seamless experience for all involved.
+
+- HackerEarth: HackerEarth is a comprehensive platform that provides solutions for hackathons, coding tests, and technical recruitment. Its unique features include its AI-powered coding assessments and its focus on providing a seamless experience for developers, from coding challenges to job opportunities.
+
+  HackerEarth's strategy is to provide a platform that caters to the needs of developers, startups, and organizations looking for top tech talent. Its market positioning is that of a platform that provides a seamless experience for developers, from coding challenges to job opportunities. Customers perceive HackerEarth as a reliable and trustworthy platform that provides a seamless experience for all involved.
+
+In summary, Devfolio's top 3 competitors are Devpost, ChallengePost, and HackerEarth. Each platform has its own unique value proposition and caters to different needs in the market. Devpost is a developer-friendly platform that caters to the needs of both developers and organizations, while ChallengePost caters more to the needs of organizations looking for innovative solutions from the developer community. HackerEarth provides a seamless experience for developers, from coding challenges to job opportunities.
