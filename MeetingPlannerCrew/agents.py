@@ -3,7 +3,7 @@ from crewai import Agent
 from langchain_groq import ChatGroq
 import os
 
-from tools.ExaSearchTool import ExaSearchTool
+from MeetingPlannerCrew.tools.ExaSearchTool import ExaSearchTool
 
 class MeetingPreparationAgents():
 	def __init__(self):

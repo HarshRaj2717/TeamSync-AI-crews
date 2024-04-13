@@ -16,7 +16,7 @@ class MeetingPreparationTasks():
 				challenges, and strategic opportunities."""),
 			async_execution=True,
 			agent=agent,
-			output_file = "industry_analysis.txt"
+			output_file = "MeetingPlannerCrew/industry_analysis.txt"
 		)
 
 	def meeting_strategy_task(self, agent, context, objective):
@@ -31,7 +31,7 @@ class MeetingPreparationTasks():
 				Complete report with a list of key talking points, strategic questions
 				to ask to help achieve the meetings objective during the meeting."""),
 			agent=agent,
-			output_file = "meeting_strategy.txt"
+			output_file = "MeetingPlannerCrew/meeting_strategy.txt"
 		)
 
 	def summary_and_briefing_task(self, agent, context, objective):
@@ -50,5 +50,5 @@ class MeetingPreparationTasks():
 				participant bios, industry overview, talking points, and
 				strategic recommendations."""),
 			agent=agent,
-			output_file = "meeting_brief.txt"
+			output_file = "MeetingPlannerCrew/meeting_brief.txt"
 		)

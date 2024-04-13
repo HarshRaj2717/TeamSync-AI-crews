@@ -20,7 +20,7 @@ class MarketingAnalysisTasks:
 			"""),
 			agent=agent,
 			expected_output = " A comprehensive report detailing the unique features, benefits, and market appeal of the given product. The report should include suggestions for enhancement or positioning and emphasize what makes the product stand out.",
-			output_file = "product_analysis.txt",
+			output_file = "InstagramCrew/product_analysis.txt",
 		)
 
 	def competitor_analysis(self, agent, product_website, product_details):
@@ -36,7 +36,7 @@ class MarketingAnalysisTasks:
 			"""),
 			agent=agent,
 			expected_output = "An analysis report highlighting the top 3 competitors of the given product. This report should cover competitors' strategies, market positioning, and customer perception. Additionally, the report should include a detailed comparison with the analyzed product.",
-			output_file = "competitor_analysis.txt",
+			output_file = "InstagramCrew/competitor_analysis.txt",
 		)
 
 	def campaign_development(self, agent, product_website, product_details):
@@ -55,7 +55,7 @@ class MarketingAnalysisTasks:
 			"""),
 			agent=agent,
 			expected_output = "A strategy document outlining a targeted marketing campaign for the given product. This document should include creative content ideas designed to captivate and engage the target audience.",
-			output_file = "campaign.txt",
+			output_file = "InstagramCrew/campaign.txt",
 		)
 
 	def instagram_ad_copy(self, agent):
@@ -78,7 +78,7 @@ class MarketingAnalysisTasks:
 			"""),
 			agent=agent,
 			expected_output = "Three options for punchy and captivating Instagram ad copies aligned with the product's marketing strategy. Each copy should highlight the product's unique selling points and encourage audience engagement.",
-			output_file = "instagram_ad.txt",
+			output_file = "InstagramCrew/instagram_ad.txt",
 		)
 
 	def take_photograph_task(self, agent, copy, product_website, product_details):
@@ -128,5 +128,5 @@ class MarketingAnalysisTasks:
 			"""),
 			agent=agent,
 			expected_output = "Three reviewed options of photographs with updated descriptions, ensuring they align with the product's goals and marketing strategy. Each description should be clear and vivid, following the examples provided.",
-			output_file = "photo_prompts.txt",
+			output_file = "InstagramCrew/photo_prompts.txt",
 		)

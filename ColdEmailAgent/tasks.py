@@ -46,5 +46,5 @@ class PersonalizeEmailTask():
             agent=agent,
             context=[draft_email],
             expected_output=f"A revised email draft in ghost writer's specified tone and style.",
-            output_file=f"output/{recipient['first_name']}_{recipient['last_name']}.txt",
+            output_file=f"ColdEmailAgent/output/{recipient['first_name']}_{recipient['last_name']}.txt",
         )
